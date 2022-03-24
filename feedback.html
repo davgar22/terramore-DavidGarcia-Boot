@@ -1,62 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Terramore</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body class="fondo">
-	<header class="navegacion">
-		<nav>
-			<a href="index.html">
-				<img src="img/logo.png" alt="Logo de Terramore">
-			</a>
-			<ul>
-				<li>
-					<a href="productos.html">Productos</a>
-				</li>
-				<li>
-					<a href="nosotros.html"> Nosotros</a>
-				</li>
-				<li>
-					<a href="feedback.html">Feedback</a>
-				</li>
-				<li>
-					<a href="contacto.html">Contacto</a>
-				</li>
-			</ul>
-		</nav>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style2.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-	</header>
-<main>
-	<h1>
-		Terramore
-	</h1>
-	<section class="seccion">
-		<article>
-			<p>
-				Solo por diversión. Hecho a mano, macetas en cerámica/cemento, velas decorativas y plantas 💌🌸☀️☁️📍 Medellin con envíos a todo el país.
-			</p>
-		</article>
-	</section>
- 	<h2> Puedes dejar tu feedback sobre tu experiencia con nosotros </h2>
-		<h3>Escribe una reseña</h3>
-	<section class="table">
-		<form action="envio.php" method="post" id="inforeseña">
-	    	<fieldset>
-        		<textarea name="inforeseña" id="inforeseña" cols="60" rows="10"></textarea>
-        		<br>
-        		<input type="submit" value="Enviar">
-        		<input type="reset" value="Cancelar">
-        	</fieldset>	
-    	</form>
-    </section>
-	<footer class="pie">
-        <h3>Nuestras redes</h3>
-        <a href="https:/instagram.com/terra.more">
-            <img src="img/insta.png" alt="Instagram" width ="150" length="350">
-        </a>
-    </footer>
-</body>
+    <title>Terramore</title>
+  </head>
+  <body class="fondo">
+<!-- empieza nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bgRosa">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="w-25" src="img/logo.PNG" alt="Terramore">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link textBig" aria-current="page" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link textBig" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link textBig" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link textBig" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+<!-- termina nav -->
+
+<!-- empieza h1 y descripcion -->
+        <h1>
+            Terramore
+        </h1>
+        <section  class="seccion">
+            <article>
+                <p>
+                    Solo por diversión. Hecho a mano, macetas en cerámica/cemento, velas decorativas y plantas 💌🌸☀️☁️📍 Medellin con envíos a todo el país.
+                </p>
+            </article>
+        </section>
+<!-- termina h1 y descripcion -->
+
+<!-- empieza form de feedback -->
+    <form class="fdback p-4" action="">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Opcional - nombre@google.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Escribe tus comentarios aquí</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Enviar Feedback</button>
+        </div>
+    </form>
+<!-- termina form de feedback -->
+
+
+
+<!-- empieza footer -->
+<footer id="foot" class="pie bgRosa">
+    <h3>Nuestras redes</h3>
+    <a href="https:/instagram.com/terra.more">
+        <img src="img/insta.png" alt="Instagram" width ="150" length="350">
+    </a>
+</footer>
+<!-- termina footer -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
 </html>

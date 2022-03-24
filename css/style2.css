@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fondo{
+    background-image: url(img/fondo.jpg);
+	background-attachment: fixed;
+	background-color: #37094e21;
+    background-blend-mode: multiply;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
+.pie{
+    background-color: rgba(180, 120, 248, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pie a{
+    display: inline-flex;
+    /*margin-left: auto;*/
+    margin-right: 10px;
+    margin-left: 10px;
+    /*width: 0%;*/
+    text-align: center;
+
+}
+.pie a img{
+    width: 15%;
+    text-align: center;
+    /* padding-left: 50px; */
+}
+.textBig{
+    font-size: 2rem;
+}
+.seccion{
+    animation-name: increment; 
+    animation-duration: 3s;
+}
+
+.seccion article p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    width: 90%;
+}
+.art{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    animation-name: increment; 
+    animation-duration: 3s;
+  
+}
+.art img {
+    /* width: 18%; */
+    width: 50%;
+    filter: drop-shadow(0px 3px 2px #300262);
+    padding: 10px;
+ }   
+ .fdbak{
+     width: 800px;
+ }
+ .bgRosa{
+    background: linear-gradient(to bottom, rgb(168 102 243 / 20%), rgb(168 102 243 / 10%));
+ }
